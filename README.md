@@ -48,6 +48,12 @@ https://www.npmjs.com/package/react-navigation
 ## Effect Show
 >效果展示
 
+## Related Introduction
+>相关说明
+
+1、路由：react-navigation
+
+2、
 
 
 
