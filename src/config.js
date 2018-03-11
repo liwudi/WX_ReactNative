@@ -28,5 +28,5 @@ const Config = function () {
   }
 };
 
-export default Config.getInstance();
+export default Config;
 

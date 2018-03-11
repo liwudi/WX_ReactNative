@@ -1,8 +1,9 @@
 /**
  * Created by mapbar_front on 2018/3/10.
  */
-import Storage from 'react-native-storage';
 import { AsyncStorage } from 'react-native';
+import Storage from 'react-native-storage';
+
 
 var storage = new Storage({
     // 最大容量，默认值1000条数据循环存储
@@ -23,6 +24,18 @@ var storage = new Storage({
     sync: {
         // 同步方法的具体说明会在后文提到
     }
+});
+
+storage.save({
+    key: 'loginState',
+    data: {
+        userName: 'mapbar_front',
+        password: 123456,
+        phone: 15910590943,
+        sex: 1,//1代表男性、0代表女性
+        portrait: 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2270110768,4042730960&fm=27&gp=0.jpg'
+    },
+    expires: 1000 * 3600
 });
 
 global.storage = storage;
